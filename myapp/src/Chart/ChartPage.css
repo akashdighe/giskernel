@@ -1,0 +1,35 @@
+/* ChartPage.css */
+
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.chart {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.chart h2 {
+    color: #333;
+}
+
+.chart-wrapper {
+    height: 300px;
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+    .chart {
+        width: calc(100% - 20px); /* Adjusted width for mobile views */
+    }
+}
